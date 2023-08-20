@@ -8,6 +8,7 @@ border-radius:4px;
 margin: -17px 0px 0px -19px;
 display:flex;
 
+
 `
 
 
@@ -16,16 +17,23 @@ margin-left: auto;
   padding: 5px;
   display: flex;
   color: blue;
+  
+
+
+`
+
+const InputSearchBase=styled(InputBase)`
+padding-left:20px;
+width:100%;
+font-size:unset;
 
 
 `
 const Search=()=>{
     return(
         <SearchContainer>
-        <InputBase  placeholder='search for products....'
-     
-        
-        
+        <InputSearchBase placeholder='search for products....'
+
         />
         <Searchicons>
         <SearchIcon></SearchIcon>

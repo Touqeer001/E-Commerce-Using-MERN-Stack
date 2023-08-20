@@ -1,6 +1,6 @@
 import {AppBar,Toolbar,styled,Box} from '@mui/material';
 import Search from './Search';
-import CustomButton from './CustomButton';
+import CustomButtons from './CustomButtons';
 
 const StyledHeader=styled(AppBar)`
 background:#2874f0;
@@ -23,7 +23,7 @@ const Header=()=>{
 
                 </Box>
                 <Search/>
-                <CustomButton/>
+                <CustomButtons/>
 
             </Toolbar>
        
