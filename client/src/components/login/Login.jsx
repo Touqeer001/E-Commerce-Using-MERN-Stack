@@ -9,9 +9,10 @@ import {
   Typography,
   styled,
 } from "@mui/material";
+//COME FROM API 
 
 import {authenticateSignup } from '../../API Services/api.js';
-// import { DataContext } from "../../Context/DataProvider.jsx";
+
 
 const Component = styled(Box)`
   height: 90vh;
