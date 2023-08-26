@@ -1,122 +1,3 @@
-// import React,{ useState,useContext } from 'react';
-
-
-
-
-// import styled from '@emotion/styled';
-// import {Box, Button, Typography} from '@mui/material'
-// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
-// //Components
-// import Login from '../login/Login.jsx'
-
-// import { DataContext } from '../../Context/DataProvider.jsx';
-
-
-
-
-// const Wrapper=styled(Box)`
-
-// display:flex;
-// margin:0 150px 0 ;
-
-
-// &>button,&>div{
-//     margin-right:40px;
-//     font-size:14px;
-//     alighn
-// }
-// `
-
-// const StyleCart=styled(Box)`
-// display:flex;
-
-
-// `
-// const LoginButtons=styled(Button)`
-// color: black;
-// background: white;
-// padding: 5px 40px;
-// border-radius: 6px;
-// height: 32px;
-// text-transform: none;
-// box-shadow: none;
-// font-weight: 600;
-// margin-bottom: 11px;
-
-
-// `
-
-
-
-
-
-
-// // const CustomButton=()=>{
-// //     const[open,setOpen]=useState(false);
-// //      const[account,setAccount]=useContext(DataContext);
-// //     const openDialoge=()=>{
-// //         setOpen(true);
-// //     }
-// //     return(
-// // < Wrapper>
-// // {/* 
-// // {
-    
-// //     account ?<Typography>account={account} setAccount={setAccount}</Typography>: <LoginButtons variant="contained" onClick={()=>openDialoge()}> */}
-// //     { account ?<Typography></Typography>: <LoginButtons variant="contained" onClick={()=>openDialoge()}>
-// //     login
-// // </LoginButtons>
-// // }
-   
-// //     <Typography style={{marginTop:0, width:135}}>Become a Seller</Typography>
-// //     <Typography  style={{marginTop:0,paddingRight: 20}}>More</Typography>
-// // <StyleCart>
-// //     <ShoppingCartIcon></ShoppingCartIcon>
-// //     <Typography>Cart</Typography>
-// // </StyleCart>
-// // <Login open={open} setOpen={setOpen}/>
-
-
-// // </ Wrapper>
-// //     )
-// // }
-
-
-// const CustomButton = () => {
-    
-//     const [open, setOpen] = useState(false);
-//          const[account,setAccount]=useContext(DataContext);
-
-//     // const cartDetails = useSelector(state => state.cart);
-//     // const { cartItems } = cartDetails;
-
-//     const openDialog = () => {
-//         setOpen(true);
-//     }
-
-//     return (
-//         <Wrapper>
-//             {
-//                 // account ? <Profile account={account} setAccount={setAccount} /> :
-//                     <LoginButtons variant="contained" onClick={() => openDialog()}>Login</LoginButtons>
-                
-//             }
-//             <Typography style={{ marginTop: 3, width: 135 }}>Become a Seller</Typography>
-//             <Typography style={{ marginTop: 3 }}>More</Typography>
-//             <StyleCart>
-//            <ShoppingCartIcon></ShoppingCartIcon>
-//         <Typography>Cart</Typography>
-//        </StyleCart>
-            
-           
-//             <Login open={open} setOpen={setOpen} setAccount={setAccount} />
-            
-//         </Wrapper>
-//     )
-// }
-
-// export default CustomButton;
 
 
 
@@ -127,11 +8,11 @@ import { Box, Typography, Badge, Button, styled } from '@mui/material';
 // import { ShoppingCart } from '@mui/icons-material';
 
 // import { Link } from 'react-router-dom';
-import { DataContext } from '../../Context/DataProvider';
+import { LoginContext } from '../../Context/DataProvider';
 // import { useSelector } from 'react-redux';
 
 import Profile from './Profile';
-// import LoginDialog from '../login/Login';
+import LoginDialog from '../login/Login';
 
 // const Container = styled(Link)(({ theme }) => ({
 //     display: 'flex',
@@ -181,7 +62,8 @@ const LoginButton = styled(Button)(({ theme }) => ({
 const CustomButtons = () => {
     
     const [open, setOpen] = useState(false);
-    const { account, setAccount } = useContext(DataContext);
+    const { account, setAccount } = useContext(LoginContext);
+
 
     // const cartDetails = useSelector(state => state.cart);
     // const { cartItems } = cartDetails;
@@ -206,8 +88,7 @@ const CustomButtons = () => {
                 </Badge>
                 <Typography style={{ marginLeft: 10 }}>Cart</Typography>
             </Container> */}
-            <DataContext open={open} setOpen={setOpen} setAccount={setAccount} />
-        </Wrapper>
+           <LoginDialog open={open} setOpen={setOpen} setAccount={setAccount} />       </Wrapper>
     )
 }
 
