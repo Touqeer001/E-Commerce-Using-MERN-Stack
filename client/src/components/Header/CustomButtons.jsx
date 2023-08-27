@@ -1,7 +1,7 @@
 
 
 
-// import React,{ useState,useContext } from 'react';
+
 import React, { useState, useContext } from 'react';
 
 import { Box, Typography, Badge, Button, styled } from '@mui/material';
@@ -11,6 +11,8 @@ import { Box, Typography, Badge, Button, styled } from '@mui/material';
 import { LoginContext } from '../../Context/DataProvider';
 // import { useSelector } from 'react-redux';
 
+
+//component
 import Profile from './Profile';
 import LoginDialog from '../login/Login';
 
