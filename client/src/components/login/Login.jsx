@@ -1,5 +1,4 @@
-import React,{ useState,useContext} from "react";
-
+import React, { useState, useContext } from "react";
 
 import {
   Dialog,
@@ -9,10 +8,12 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-//COME FROM API 
+//COME FROM API
 
-import {authenticateSignup } from '../../API Services/api.js';
-
+import {
+  authenticateSignup,
+  authenticateLogin,
+} from "../../API Services/api.js";
 
 const Component = styled(Box)`
   height: 90vh;
@@ -64,6 +65,18 @@ const CreateAccount = styled(Typography)`
   font-size: 14px;
   cursor: pointer;
 `;
+
+const Error=styled(Typography)`
+font-size:14px;
+color:red;
+// line-height:0; //line-height: 0; is used to set the height of each line of text within an element to zero.
+margin-top:10px;
+font-weight:600;
+
+`
+
+
+
 const accountInitialValues = {
   login: {
     view: "login",
@@ -81,15 +94,20 @@ const signupInitialValues = {
   phone: "",
 };
 
-const LoginDailog= ({ open, setOpen,setAccount }) => {
-    // const [ login, setLogin ] = useState(loginInitialValues);
-    const [ signup, setSignup ] = useState(signupInitialValues);
-    const [ error, showError] = useState(false);
-    const [ account, toggleAccount ] = useState(accountInitialValues.login);
+const loginInitialValues = {
+  username: "",
+  password: "",
+};
+
+const LoginDailog = ({ open, setOpen, setAccount }) => {
+  const [login, setLogin] = useState(loginInitialValues);
+  const [signup, setSignup] = useState(signupInitialValues);
+  const [error, setError] = useState(false);
+  const [account, toggleAccount] = useState(accountInitialValues.login);
 
   const handleClose = () => {
     setOpen(false);
-    toggleAccount(accountInitialValues.signup);
+    toggleAccount(accountInitialValues.login);
   };
 
   const toggleSignup = () => {
@@ -98,16 +116,60 @@ const LoginDailog= ({ open, setOpen,setAccount }) => {
 
   const onInputChange = (e) => {
     setSignup({ ...signup, [e.target.name]: e.target.value });
-  
   };
 
-  const signupUser=async()=>{
-   let response= await authenticateSignup(signup);
-   if(!response) return;
-   handleClose();
-   setAccount(signup.firstname);
+  //Below line of code if for login
+  const onValueChange = (e) => {
+    setLogin({ ...login, [e.target.name]: e.target.value });
+  };
 
-  }
+
+
+
+
+
+  //this signupUser function appears to handle the signup process. 
+  // It attempts to authenticate the user's signup data, and if successful, 
+  //it closes a dialog (via handleClose()) and updates the user account information (possibly account state) with the first name from the signup data. If the signup authentication is not successful, the function simply returns without performing the further actions.
+
+  const signupUser = async () => {
+    let response = await authenticateSignup(signup);
+    if (!response) return;
+    handleClose();
+    setAccount(signup.firstname);
+  };
+
+  //functin for login user
+
+  const LoginUser = async () => {
+    let response = await authenticateLogin(login);
+    console.log(response);
+
+
+      if(response.status===200){
+       handleClose();
+        setAccount(response.data.data.firstname)
+
+      }else{
+        setError(true);
+      }
+      
+    //   const loginUser = async() => {
+    //     let response = await authenticateLogin(login);
+    //     if(!response) 
+    //         showError(true);
+    //     else {
+    //         showError(false);
+    //         handleClose();
+    //         setAccount(login.username);
+    //     }
+    // }
+
+
+
+
+
+  };
   return (
     <Dialog open={open} onClose={handleClose}>
       <Component>
@@ -118,13 +180,24 @@ const LoginDailog= ({ open, setOpen,setAccount }) => {
           <Wrapper>
             <TextField
               variant="standard"
-              label="Enter Email/Mobile Number"
+              label="Enter Username"
+              name="username"
+              onChange={(e) => onValueChange(e)}
             ></TextField>
-            <TextField variant="standard" label="Enter Password"></TextField>
-            <Typography>
-              
-            </Typography>
-            <LoginButton variant="contained">Login</LoginButton>
+            
+            {error && <Error>Please Enter Valid username or Password</Error>}
+
+            <TextField
+              variant="standard"
+              label="Enter Password"
+              name="password"
+              onChange={(e) => onValueChange(e)}
+            ></TextField>
+            
+            <Typography></Typography>
+            <LoginButton variant="contained" onClick={() => LoginUser()}>
+              Login
+            </LoginButton>
             <Text style={{ textAlign: "center" }}>OR</Text>
             <RequestOTP variant="contained">Request OTP</RequestOTP>
             <CreateAccount onClick={() => toggleSignup()}>
@@ -177,5 +250,3 @@ const LoginDailog= ({ open, setOpen,setAccount }) => {
   );
 };
 export default LoginDailog;
-
-
