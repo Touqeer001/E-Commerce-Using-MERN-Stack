@@ -1,3 +1,8 @@
+// this reducer function is designed to handle two specific action types: GET_PRODUCTS_SUCCESS and GET_PRODUCTS_FAIL. 
+// When a GET_PRODUCTS_SUCCESS action is dispatched, it updates the state with the received product data. 
+// When a GET_PRODUCTS_FAIL action is dispatched, it updates the state with an error message. 
+// For any other action types, it returns the current state without making any changes. 
+// This reducer is likely part of a larger Redux store that manages product-related state in a web application.
 
 import * as actionTypes from '../constants/productConstant'
 
