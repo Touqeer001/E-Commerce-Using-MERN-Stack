@@ -14,12 +14,14 @@ import  ContextProvider from './Context/DataProvider';
 
 function App() {
   return (
+    <Box style={{background: 'currentColor'}}>
    <ContextProvider>
 
   <Header/>
   <Box style={{marginTop:54}}/>
   <Home/>
   </ContextProvider>
+  </Box>
  
   );
 }
