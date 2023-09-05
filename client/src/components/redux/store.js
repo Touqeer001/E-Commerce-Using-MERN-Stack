@@ -16,7 +16,7 @@ const reducer=combineReducers({
 
 })
 
-console.log(getProductDetailsReducer)
+
 
 const middleware = [thunk];
 
