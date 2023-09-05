@@ -9,19 +9,26 @@ import Home from './components/Home/Home'
 import {Box} from '@mui/material';
 
 import  ContextProvider from './Context/DataProvider';
-
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import DetailView from './components/details/DetailView'
 
 function App() {
   return (
-    <Box style={{background: 'currentColor'}}>
+    // <Box style={{background: 'currentColor'}}>
    <ContextProvider>
+
+   <BrowserRouter>
 
   <Header/>
   <Box style={{marginTop:54}}/>
-  <Home/>
+  <Routes>
+  <Route path='/' element={<Home/>}/>
+ <Route path='/product/:id' element={<DetailView/>}/>
+  </Routes>
+  </BrowserRouter>
   </ContextProvider>
-  </Box>
+ 
+  /* </Box> */
  
   );
 }
