@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom";
 
 
 import React, { useState, useContext } from 'react';
@@ -60,6 +60,13 @@ const LoginButton = styled(Button)(({ theme }) => ({
     }
 }));
 
+const Container = styled(Link)(({ theme }) => ({
+    display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+        display: 'block'
+    }
+}));
+
 
 const CustomButtons = () => {
     
@@ -81,15 +88,18 @@ const CustomButtons = () => {
                     <LoginButton variant="contained" onClick={() => openDialog()}>Login</LoginButton>
                 
             }
+                     <Link to='/' style={{ marginTop: 3,fontSize:'18px'}}>Home</Link>
             <Typography style={{ marginTop: 3, width: 135 }}>Become a Seller</Typography>
             <Typography style={{ marginTop: 3 }}>More</Typography>
+   
             
-            {/* <Container to='/cart'>
-                <Badge badgeContent={cartItems?.length} color="secondary">
-                    <ShoppingCart />
+            { <Container to='/cart'>
+                {/* <Badge badgeContent={cartItems?.length} color="secondary"> */}
+                <Badge>
+                    {/* <ShoppingCart /> */}
                 </Badge>
                 <Typography style={{ marginLeft: 10 }}>Cart</Typography>
-            </Container> */}
+            </Container> }
            <LoginDialog open={open} setOpen={setOpen} setAccount={setAccount} />       </Wrapper>
     )
 }
