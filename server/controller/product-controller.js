@@ -16,3 +16,17 @@ export const getProducts = async (request, response) => {
     response.status(500).json({ messege: error.messege });
   }
 };
+
+
+
+
+export const getProductById = async (request, response) => {
+  try {
+    const id=request.params.id;
+      const Product= await products.findOne({ 'id':id});
+      response.status(200).json(Product);
+  }catch (error) {
+    response.status(500).json({ messege: error.messege });
+
+  }
+}
