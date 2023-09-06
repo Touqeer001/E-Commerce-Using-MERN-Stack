@@ -26,6 +26,13 @@ export const authenticateSignup = async (data) => {
     }
 }
 
-
+export  const payUsingPaytm = async (data) => {
+    try {
+        let response = await axios.post(`${url}/payment`, data);
+        return response.data;
+    } catch (error) {
+        console.log('Error', error);
+    }
+}
 
 
