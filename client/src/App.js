@@ -11,6 +11,7 @@ import {Box} from '@mui/material';
 import  ContextProvider from './Context/DataProvider';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import DetailView from './components/details/DetailView'
+import Card from './components/cart/Card';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
   <Routes>
   <Route path='/' element={<Home/>}/>
  <Route path='/product/:id' element={<DetailView/>}/>
+ <Route path='/card' element={<Card/>}/>
   </Routes>
   </BrowserRouter>
   </ContextProvider>
