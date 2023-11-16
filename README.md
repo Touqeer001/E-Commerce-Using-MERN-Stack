@@ -87,33 +87,11 @@ Flipkart is an e-commerce web application that allows you topurchase products on
 
 <br />
 
-## Test Coupon Codes
-```
-MINISTORE5     (for 5% Off)
 
-MINISTORE10    (for 10% Off)
-
-MINISTORE15    (for 15% Off)
-
-MINISTORE20    (for 15% Off)
-
-MINISTORE25    (for 25% Off)
-
-MINISTORE30    (for 30% Off)
-
-LUCKYDAY       (for 40% Off)
-
-MONDAYSALE     (for 20% Off)
-
-WEEKENDOFF     (for 20% Off)
-
-MASAI30        (for 30% Off)
-```
-<br />
 
 ## Demo
 
-[Check here to see the presentation video of this project](https://www.linkedin.com/posts/m-sehrawat_programming-marketing-computerscience-activity-6932731204051816448-q0vg?utm_source=linkedin_share&utm_medium=member_desktop_web)
+[Check here to see the presentation video of this project](https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack.git)
 
 
 <br/>
@@ -121,7 +99,7 @@ MASAI30        (for 30% Off)
 
 ## Getting Started
 
-This project was built using React v 17.0.2, Redux v 4.1.1, Chakra UI, CSS, JavaScript, Rest API, Node JS, Express and MongoDB. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
+This project was built using React v 17.0.2, Redux v 4.1.1, Material UI, CSS, JavaScript, Rest API, Node JS, Express and MongoDBand jwt token. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
 
 
 ### Prerequisites
@@ -133,13 +111,13 @@ This project was built using React v 17.0.2, Redux v 4.1.1, Chakra UI, CSS, Java
 ### Setup
 
 
-The project repository can be found in [GitHub link](https://github.com/m-sehrawat/Mini-Store) or just clone the project using this command. 
+The project repository can be found in [GitHub link](ttps://github.com/Touqeer001/E-Commerce-Using-MERN-Stack.git) or just clone the project using this command. 
 
 
 ```
 Using HTTPS
 
-# git clone  https://github.com/m-sehrawat/Mini-Store.git
+# git clone  ttps://github.com/Touqeer001/E-Commerce-Using-MERN-Stack.git
 ```
 
 + Open terminal on your workspace with
@@ -212,7 +190,7 @@ To run this project, you will need to add the following environment variables to
 
 - Visual Studio Code
 - create-react-app template
-- MongoDB compass
+- MongoDB Atlas
 
 <br/>
 
@@ -222,10 +200,14 @@ To run this project, you will need to add the following environment variables to
 
 If you want to contact me, you can reach me through below handles.
 
-[![linkedin](https://img.shields.io/badge/Mohit_Sehrawat-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/m-sehrawat/)
-[![Twitter](https://img.shields.io/badge/Mohit_Sehrawat-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/m-sehrawat/)
 
-© 2022 Mohit Sehrawat
+[![linkedin](https://img.shields.io/badge/touqeer-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/touqeer-ansari) 
+
+
+[![GitHub](https://img.shields.io/badge/Touqeer001-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Touqeer001)
+
+© 2023 Touqeer Ansari
+
 
 
 
