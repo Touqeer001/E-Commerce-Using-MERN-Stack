@@ -26,7 +26,8 @@
   
 Flipkart is an e-commerce web application that allows you topurchase products online. It has a variety of categories, just visit the product listing page and you will see all the products, apply search as per your need and in just a few clicks you can buy any products from the website.
   
-  ![1]((https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
+ ![1]((https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
+ ![cover](https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
 
 
   
