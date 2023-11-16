@@ -19,16 +19,17 @@
 <p align="center"> 
     <br />&#10023;
     <a href="#Demo">View Demo</a>   &#10023;  
-    <a href="https://github.com/m-sehrawat/Mini-Store/issues">Report Bug</a>    &#10023;
+    <a href="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/issues">Report Bug</a> &#10023;
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;    
     <a href="#Contact">Author</a> &#10023;
   </p>
   
-  Mini-Store is an e-commerce web application that allows you to buy shoes & clothes online. It has a variety of categories, just visit the product listing page and you will see all the products, apply filters as per your need and in just a few clicks you can buy any products from the website.
+Flipkart is an e-commerce web application that allows you topurchase products online. It has a variety of categories, just visit the product listing page and you will see all the products, apply search as per your need and in just a few clicks you can buy any products from the website.
   
  
   
-  ![1](https://user-images.githubusercontent.com/91532881/168818920-09cbf179-2ac5-489c-9cdf-e99653f9a5b9.png)
+  ![1]((https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/17ff4fdc-4b06-4204-be31-627a5c3f2b0c)
+
   
   <br />
   
