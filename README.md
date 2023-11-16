@@ -76,12 +76,12 @@ Flipkart is an e-commerce web application that allows you topurchase products on
     <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/f8d87bfd-132e-4986-a510-e6ae97f3695c" alt="product-details" /></td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168818993-625d446b-aa8d-4d56-88f8-0c68d0a10132.png" alt="wishlist" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168818994-f1ae1fc2-6cb9-4017-8b87-341f4bbb1af3.png" alt="cart" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/b9a048cc-b134-4ea2-8ee5-c4c272a01d8b" alt="LoginPage" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/06d1ea32-1612-4d3e-8041-27544b5b50da" alt="cart" /></td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168818999-0c58ad51-4502-4f5f-8ee3-39c6384b9843.png" alt="checkout" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168819001-10bfbb16-b6fe-474a-a10a-820a08255c10.png" alt="order-summary" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/0bd2bb20-5fb6-4ff8-b432-35597df033e2" alt="AddToCartPage" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/11b2affe-9424-4d8c-a432-97f1f9d392f0" alt="Search" /></td>
   </tr>
 </table>
 
