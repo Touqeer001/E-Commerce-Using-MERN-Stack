@@ -26,7 +26,6 @@
   
 Flipkart is an e-commerce web application that allows you topurchase products online. It has a variety of categories, just visit the product listing page and you will see all the products, apply search as per your need and in just a few clicks you can buy any products from the website.
   
- ![1]((https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
  ![cover](https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
 
 
@@ -35,37 +34,32 @@ Flipkart is an e-commerce web application that allows you topurchase products on
   
   ## Screens ( All screens are responsive along with Dark Mode)
    - Homepage
-   - Product Listing Page with Filters
+   - Product Listing.
    - Product Description Page
    - Cart Management
-   - Wishlist/Favourites Management
-   - Checkout - Address Management
    - Login / Logout
    - Signup
-   - Order Summary
+   -Addd To Cart Page
+   -Payment 
 
 
-![2](https://user-images.githubusercontent.com/91532881/168818963-328399b4-c459-472f-b452-7ce6a91adcf6.png)
-![3](https://user-images.githubusercontent.com/91532881/168818970-ef2e11a5-9409-408e-ad43-961b238d0ec1.png)
+
+ ![cover](https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
+
 
 <br />
 
 
 ## 🚀 Features
 - Login/Signup User Account
-- Product Sorting Based on Price, Ratings, Namings
-- Product Filters Based on Gender, Category, Grid View
-- Products Pagination (Default 6 Products Per Page)
-- Products Pagination Change Button (can set 4 products, 6 products or 8 products per page)
-- Wishlist Add/Remove Items
-- From wishlist to directly Add-to-Cart feature
+- Product search
+- Add/Remove Items
 - Cart Add/Remove Items
 - Cart Update Quantities
-- Address Management
-- Order Summary
-- Coupons are provided for the discount
-- Order details of all ordered item
-- Dark mode is available
+- product discription detail
+- payment gatway
+  
+
 
 <br />
 
@@ -74,12 +68,12 @@ Flipkart is an e-commerce web application that allows you topurchase products on
 
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168818978-a574a3fb-b4d1-49e6-9c3a-99d8a6f7031a.png" alt="home" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168818986-59e2dad1-5b2b-4054-8f34-bd3f8f26c624.png" alt="signup" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6" alt="home" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/6c9d2e85-3a6a-4d9c-b76d-806b57b6889a" alt="signup" /></td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168818988-c4868232-3071-4026-a465-decf75a093d2.png" alt="products" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/168818990-08f7e469-ad9a-4077-9c47-f56e1e848d59.png" alt="product-details" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/f8d87bfd-132e-4986-a510-e6ae97f3695c" alt="products" /></td>
+    <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/f8d87bfd-132e-4986-a510-e6ae97f3695c" alt="product-details" /></td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/91532881/168818993-625d446b-aa8d-4d56-88f8-0c68d0a10132.png" alt="wishlist" /></td>
